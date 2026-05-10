@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Diary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>📔 My Diary</h1>
+
+    <button id="themeToggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+    <!-- Create new entry -->
+    <textarea id="entry" placeholder="Write your thoughts..."></textarea>
+
+    <div class="actions">
+      <button onclick="addEntry()">Save Entry</button>
+    </div>
+
+    <!-- Entries list -->
+    <h2>Past Entries</h2>
+    <div id="entries"></div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div id="editModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Edit Entry</h3>
+
+      <textarea id="editText" placeholder="Edit your entry..."></textarea>
+
+      <div class="modal-actions">
+        <button onclick="saveEdit()">Save</button>
+        <button onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

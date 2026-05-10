@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 650px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+  }
+  
+  .actions {
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  button {
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  button:hover {
+    background: #3656d6;
+  }
+  
+  .entry {
+    background: #f0f2f7;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+  }
+  
+  .entry small {
+    color: gray;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .entry-actions {
+    margin-top: 8px;
+  }
+  
+  .entry-actions button {
+    background: #eee;
+    color: #333;
+    font-size: 12px;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+  .modal-actions {
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  /* DARK mode */
+
+  /* ===== DARK MODE ===== */
+
+body.dark {
+  background: #121212;
+  color: #eaeaea;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+body.dark textarea {
+  background: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark .entry {
+  background: #2a2a2a;
+}
+
+body.dark button {
+  background: #3b82f6;
+}
+
+body.dark button:hover {
+  background: #2563eb;
+}
+
+body.dark .modal-content {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+#themeToggle {
+  float: right;
+  margin-bottom: 10px;
+}
